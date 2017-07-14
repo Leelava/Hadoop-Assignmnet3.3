@@ -1,0 +1,162 @@
+[acadgild@localhost Desktop]$  hadoop jar ~/Desktop/USS1.jar /user/acadgild/television.txt /user/acadgild/unitSoldOutS1
+17/07/12 16:25:25 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/07/12 16:25:26 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+17/07/12 16:25:28 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/07/12 16:25:29 INFO input.FileInputFormat: Total input paths to process : 1
+17/07/12 16:25:30 INFO mapreduce.JobSubmitter: number of splits:1
+17/07/12 16:25:31 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1499855015398_0003
+17/07/12 16:25:32 INFO impl.YarnClientImpl: Submitted application application_1499855015398_0003
+17/07/12 16:25:32 INFO mapreduce.Job: The url to track the job: http://localhost:8088/proxy/application_1499855015398_0003/
+17/07/12 16:25:32 INFO mapreduce.Job: Running job: job_1499855015398_0003
+17/07/12 16:25:54 INFO mapreduce.Job: Job job_1499855015398_0003 running in uber mode : false
+17/07/12 16:25:54 INFO mapreduce.Job:  map 0% reduce 0%
+17/07/12 16:26:15 INFO mapreduce.Job:  map 100% reduce 0%
+17/07/12 16:26:31 INFO mapreduce.Job:  map 100% reduce 100%
+17/07/12 16:26:33 INFO mapreduce.Job: Job job_1499855015398_0003 completed successfully
+17/07/12 16:26:34 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=6
+		FILE: Number of bytes written=212837
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=848
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=17348
+		Total time spent by all reduces in occupied slots (ms)=13465
+		Total time spent by all map tasks (ms)=17348
+		Total time spent by all reduce tasks (ms)=13465
+		Total vcore-seconds taken by all map tasks=17348
+		Total vcore-seconds taken by all reduce tasks=13465
+		Total megabyte-seconds taken by all map tasks=17764352
+		Total megabyte-seconds taken by all reduce tasks=13788160
+	Map-Reduce Framework
+		Map input records=18
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=115
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=195
+		CPU time spent (ms)=1150
+		Physical memory (bytes) snapshot=266698752
+		Virtual memory (bytes) snapshot=4113588224
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=733
+	File Output Format Counters 
+		Bytes Written=0
+[acadgild@localhost Desktop]$ hadoop fs -cat /user/acadgild/unitSoldOutS1
+17/07/12 16:27:32 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+cat: `/user/acadgild/unitSoldOutS1': Is a directory
+[acadgild@localhost Desktop]$  hadoop fs -ls /user/acadgild/unitSoldOutS1
+17/07/12 16:28:10 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 acadgild supergroup          0 2017-07-12 16:26 /user/acadgild/unitSoldOutS1/_SUCCESS
+-rw-r--r--   1 acadgild supergroup          0 2017-07-12 16:26 /user/acadgild/unitSoldOutS1/part-r-00000
+[acadgild@localhost Desktop]$ hadoop fs -cat /user/acadgild/unitSoldOutS1/part-r-00000
+17/07/12 16:28:29 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[acadgild@localhost Desktop]$  hadoop jar ~/Desktop/USS1.jar /user/acadgild/television.txt /user/acadgild/unitSoldOutS2
+17/07/12 16:31:14 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/07/12 16:31:15 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+17/07/12 16:31:17 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/07/12 16:31:17 INFO input.FileInputFormat: Total input paths to process : 1
+17/07/12 16:31:18 INFO mapreduce.JobSubmitter: number of splits:1
+17/07/12 16:31:18 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1499855015398_0004
+17/07/12 16:31:19 INFO impl.YarnClientImpl: Submitted application application_1499855015398_0004
+17/07/12 16:31:19 INFO mapreduce.Job: The url to track the job: http://localhost:8088/proxy/application_1499855015398_0004/
+17/07/12 16:31:19 INFO mapreduce.Job: Running job: job_1499855015398_0004
+17/07/12 16:31:33 INFO mapreduce.Job: Job job_1499855015398_0004 running in uber mode : false
+17/07/12 16:31:33 INFO mapreduce.Job:  map 0% reduce 0%
+17/07/12 16:31:45 INFO mapreduce.Job:  map 100% reduce 0%
+17/07/12 16:32:05 INFO mapreduce.Job:  map 100% reduce 100%
+17/07/12 16:32:08 INFO mapreduce.Job: Job job_1499855015398_0004 completed successfully
+17/07/12 16:32:08 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=73
+		FILE: Number of bytes written=212971
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=848
+		HDFS: Number of bytes written=16
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=11128
+		Total time spent by all reduces in occupied slots (ms)=14040
+		Total time spent by all map tasks (ms)=11128
+		Total time spent by all reduce tasks (ms)=14040
+		Total vcore-seconds taken by all map tasks=11128
+		Total vcore-seconds taken by all reduce tasks=14040
+		Total megabyte-seconds taken by all map tasks=11395072
+		Total megabyte-seconds taken by all reduce tasks=14376960
+	Map-Reduce Framework
+		Map input records=18
+		Map output records=3
+		Map output bytes=61
+		Map output materialized bytes=73
+		Input split bytes=115
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=73
+		Reduce input records=3
+		Reduce output records=1
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=236
+		CPU time spent (ms)=1580
+		Physical memory (bytes) snapshot=263323648
+		Virtual memory (bytes) snapshot=4113752064
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=733
+	File Output Format Counters 
+		Bytes Written=16
+[acadgild@localhost Desktop]$ hadoop fs -ls /user/acadgild/unitSoldOutS2
+17/07/12 16:33:04 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 acadgild supergroup          0 2017-07-12 16:32 /user/acadgild/unitSoldOutS2/_SUCCESS
+-rw-r--r--   1 acadgild supergroup         16 2017-07-12 16:32 /user/acadgild/unitSoldOutS2/part-r-00000
+[acadgild@localhost Desktop]$ hadoop fs -cat /user/acadgild/unitSoldOutS2/part-r-00000
+17/07/12 16:33:22 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Uttar Pradesh	3
+[acadgild@localhost Desktop]$ 
+
